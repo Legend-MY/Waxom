@@ -1,0 +1,44 @@
+// Обнуление стилей
+@import 'nullstyle';
+// Цвета
+@import 'colors';
+// Размеры контейнера
+@import 'grid';
+// Общие элементы
+@import 'interface';
+// menu-burger
+@import 'menu-burger';
+// slick slider
+@import 'slickslider';
+// popup
+@import 'popup';
+
+
+// header
+@import 'blocks/header';
+// navbar
+@import 'nav';
+// hero
+@import 'blocks/hero';
+// services
+@import 'blocks/services';
+// ideas
+@import 'blocks/ideas';
+// multipurpose
+@import 'blocks/multipurpose';
+// projects
+@import 'blocks/projects';
+// video
+@import 'blocks/video';
+// mobile
+@import 'blocks/mobile';
+// statistic
+@import 'blocks/statistic';
+// posts
+@import 'blocks/posts';
+// brands
+@import 'blocks/brands';
+//about
+@import 'blocks/about';
+//footer
+@import 'blocks/footer';

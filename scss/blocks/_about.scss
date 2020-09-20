@@ -1,0 +1,135 @@
+.about {
+  background-color: #191919;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  &__item {
+    flex: 0 0 25%;
+    padding: 0 15px;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__logo {
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $titles;
+    transition: all 0.3s;
+    span {
+      color: #00bff3;
+      cursor: pointer;
+    }
+    span.link {
+      color: #959595;
+    }
+  }
+  span:hover {
+    text-decoration: underline;
+  }
+  &__link {
+    align-self: flex-start;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $projects-cat;
+    padding-right: 18px;
+    position: relative;
+    margin-top: 30px;
+    transition: all 0.3s;
+    &:after {
+      content: '';
+      display: inline-block;
+      border: 4px solid transparent; 
+      border-left: 4px solid $projects-cat;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:hover {
+      color: $secondary;
+      text-decoration: underline;
+      &:after {
+        border-left: 4px solid $secondary;
+      }
+    }
+  }
+  &__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: $default;
+    margin: 30px 0;
+  }
+  &__post {
+    display: block;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    &:not(:last-child) {
+      border-bottom: 1px solid #252525;
+    }
+    &:hover {
+      .about__date {
+        color: $default;
+      }
+      .about__text {
+        color: $secondary;
+      }
+    }
+  }
+  &__date {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+    color: $days;
+    transition: all 0.3s;
+  }
+  &__photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -5px;
+  }
+  &__photo {
+    padding: 0 5px;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .about {
+    &__item {
+      flex: 0 0 50%;
+    }
+  }
+}
+
+@media (max-width: 628px) {
+  .about {
+    &__item {
+      flex: 0 0 100%;
+      &:first-child {
+        margin-bottom: 40px;
+      }
+    }
+    &__logo, &__title{
+      text-align: center;
+    }
+    &__title {
+      margin-top: 0;
+    }
+  }
+}

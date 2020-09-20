@@ -1,0 +1,32 @@
+.ideas {
+  padding-bottom: 0;
+  background-color: #fbfaf8;
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__subtitle {
+    margin-bottom: 40px;
+  }
+  &__banner {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .ideas {
+    // padding-top: 40px;
+  }
+}
+
+@media (max-width: 540px) {
+  .ideas {
+    padding-bottom: 40px;
+    &__banner {
+      display: none;
+    }
+    &__subtitle {
+      margin-bottom: 0;
+    }
+  }
+}

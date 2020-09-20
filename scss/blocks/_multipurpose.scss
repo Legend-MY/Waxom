@@ -1,0 +1,50 @@
+.multipurpose {
+  padding: 50px 0;
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    line-height: 120%;
+    color: $default;
+    margin-bottom: 8px;
+    span {
+      color: $secondary;
+    }
+  }
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    color: #615855;
+  }
+  &__button {
+    // padding: 20px 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .multipurpose {
+    &__text {
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    &__button {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .multipurpose {
+    padding: 40px 0;
+    &__title {
+      font-size: 22px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.menu-burger {
+  display: none;
+  width: 30px;
+  height: 21px;
+  background-color: transparent;
+  position: relative;
+  z-index: 999;
+  span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: $default;
+    border-radius: 25%;
+    transition: all 0.7s;
+    &:not(:first-child) {
+      margin-top: 4px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu-burger {
+    display: block;
+    order: 2;
+    &-active {
+      span {
+        position: absolute;
+        left: 0;
+        transition: transform 0.7s;
+      }
+      span:nth-child(2) {
+        opacity: 0;
+      }
+      span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 9px;
+      }
+      span:nth-child(3) {
+        transform: rotate(45deg);
+        bottom: 9px;
+      }
+    }
+  }
+}

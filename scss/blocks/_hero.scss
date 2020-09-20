@@ -1,0 +1,131 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  &__slider {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  &__slide {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(17, 17, 17, 0.7);
+      z-index: 1;
+    }
+  }
+  &__slide-1 {
+    background: url('../img/hero/slide-1.jpg') no-repeat center center / cover;
+  }
+  &__slide-2 {
+    background: url('../img/hero/slide-2.jpg') no-repeat center center / cover;
+  }
+  &__slide-3 {
+    background: url('../img/hero/slide-3.jpg') no-repeat center center / cover;
+  }
+  &__text {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  &__subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: $default;
+    margin-bottom: 14px;
+  }
+  &__title {
+    font-family: 'Raleway', sans-serif;
+    color: $default;
+    font-size: 52px;
+    font-weight: 800;
+    margin-bottom: 19px;
+  }
+  &__description {
+    max-width: 562px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: $default;
+    margin: 0 auto;
+    margin-bottom: 52px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    &__subtitle {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+    &__title {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+    &__description {
+      font-size: 14px;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    &__subtitle {
+    font-size: 24px;
+  }
+    &__title {
+      font-size: 36px;
+    }
+    &__description {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .hero {
+    &__subtitle {
+    font-size: 21px;
+  }
+    &__title {
+      font-size: 28px;
+    }
+    &__description {
+      font-size: 12px;
+      max-width: 420px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .hero {
+    &__subtitle {
+    font-size: 18px;
+  }
+    &__title {
+      font-size: 24px;
+    }
+    &__description {
+      font-size: 11px;
+      line-height: 16px;
+      max-width: 300px;
+    }
+  }
+}
