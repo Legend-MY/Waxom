@@ -546,6 +546,7 @@ body {
 }
 
 .header .cart-items {
+  display: inline-block;
   position: absolute;
   top: 200%;
   right: 0;
