@@ -44,7 +44,7 @@ $(document).ready(function () {
   $('.menu-burger').click(function () {
     $('.nav').toggleClass('nav-active');
     $('.menu-burger').toggleClass('menu-burger-active');
-    $('body').toggleClass('lock');
+    $('body').toggleClass('lockscrollmenu');
   });
 
 

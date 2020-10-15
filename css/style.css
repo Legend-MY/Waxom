@@ -130,7 +130,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-  body.lock {
+  body.lock, body.lockscrollmenu {
     overflow: hidden;
   }
 }
